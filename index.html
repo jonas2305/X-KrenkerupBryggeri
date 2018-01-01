@@ -8,17 +8,175 @@
 </head>
 <body>
 
+<!--COVER VIDEO/BILLEDE-->
+
+<div class="front-cover"></div>
+
 <!--HEADER-->
 
 <div class="menunav">
     <a href="index.html" class="logo"><img src="images/Krenkerup_logo.jpg"></a>
-    <a href="#">Historien</a>
-    <a href="#">Øllen</a>
-    <a href="#">Følg os</a>
+    <a href="#historien">Historien</a>
+    <a href="#oellen">Øllen</a>
+    <a href="#foelgos">Følg os</a>
     <a href="#">Bryggeriet</a>
+    <a href="javascript:void(0);" style="font-size:40px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
+<!--MAIN CONTENT-->
+<main>
+    <!--HISTORIEN-->
+    <div class="historien" id="historien">
+        <!--TIDSLINJE-->
+        <div class="tidslinje"></div>
+        <!--HISTORIEN CONTENT-->
+        <div class="historie-content">
+            <!--HEADER HISTORIEN-->
+            <h1>Historien</h1>
+            <!--BEGYNDELSEN-->
+            <div class="historie-afsnit">
+                <img src="images/krenkerup.gaard.small.jpg" alt="begyndelsen img">
+                <h3>Begyndelsen</h3>
+                <p class="aarstal">1367</p>
+                <p class="beskrivelse"> Krenkerup er et brand, der ærer den særlige historie og slædternes stolte arbejde gennem mere end 600 år.
+                    Hver enkel øl bærer præg af æstitik, kompromiløs kvalitet, rene råvarer - og taknemmelighede for medarbejdernes
+                    støtte gennem flere hundrede år. Krenkerup øl er skabt med omtanke for bæredygtighed og det rene resultat - “fra jord til bord” værdier.
+                </p>
+            </div>
+            <!--LILLE BRYGGERI - STOR SMAG-->
+            <div class="historie-afsnit">
+                <img src="images/krenkerup.kedler.small.jpg" alt="starten img">
+                <h3>Lille bryggeri - Stor smag</h3>
+                <p class="aarstal">2008</p>
+                <p class="beskrivelse"> 12. august 2008 blev den første bryg sat over på Krenkerup Bryggeri. Første bryg var vores traditionsrige høstøl,
+                    og siden da, er der løbet mange flere varianter igennem slangerne på bryggeriet.<br>
+                    Øl fra Krenkrup Bryggeri er brygget med dansk malt, og vi brygger efter den bayerske Reinheitsgebot, der stiller høje krav til rene
+                    råvarer, og ingen anvendelse af E-numre. Det sikre dansk kvalitetsøl, brygget på vand, malt, humle, gær og intet andet.
+                </p>
+            </div>
+            <!--EUROPAS BEDSTE-->
+            <div class="historie-afsnit">
+                <img src="images/krenkerup.beer.rauch.small.jpg" alt="Europas bedste img">
+                <h3>Europas bedste</h3>
+                <p class="aarstal">2011</p>
+                <p class="beskrivelse"> Hos Krenkerup Bryggeri bestrøber vi os på, at brygge Europas bedste kvalitetsøl. Vi sigter højt efter målet, og er
+                    i den grad på rette vej. I 2011 blev vores Rauch Bier kåret til Europas bedste røg øl, ved Eurpean Beer Star, en af verdens mest anerkendte
+                    øl-konkurrencer. Derudover blev vores Doppel Bock kåret til den bedste Doppel Bock ved samme konkurrence i 2012.
+                </p>
+            </div>
+            <!--10 ÅRS FØDSELSDAG-->
+            <div class="historie-afsnit">
+                <img src="images/krenkerup.glas.small.jpg" alt="10 års fødselsdag img">
+                <h3>10 års fødselsdag</h3>
+                <p class="aarstal">2018</p>
+                <p class="beskrivelse"> I 2018 kan vi på Krenkerup Bryggeri stolt fejre 10 års fødselsdag. I løbet af 10 år, er der løbet over 15 forskellige
+                    slag øl igennem slangerne på Krenkrup Bryggeri. Allesammen brygget af urokkelig kvalitet efter den beyerske Reinhetsgebot. Dette fejre vi med en
+                    jubilæumsøl, der trækker rødderne tilbage til høstøllen, hvor det hele startede.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--ØLLEN-->
+    <div class="oellen" id="oellen">
+        <!--PRODUKTFOTO-->
+        <img src="images/krenkerup.x.small.png">
+        <div class="oellen-beskrivelse">
+            <!--HEADER ØLLEN-->
+            <h2>En hyldest til originalen</h2>
+            <!--BESKRIVELSE-->
+            <h4>Inspiration</h4>
+            <p>Vores jubileums øl er inspireret af den første øl, der blev brygget på Krenkerup Bryggeri. Vores traditionsrige høstøl, er populær blandt mange,
+                og har en speciel plads i hjertet hos alle på og omkring Krenkreup. Det faldt ganske naturligt, at jubilæeumsøllen skulle minde om vores høstøl.</p>
+            <h4>Brygningen</h4>
+            <p>Vores jubilæums øl er ligesom alle vores andre varianter brygget efter den bayerske Reinheitsgebot. Det vil sige uden nogen former for tilæstningstoffer.</p>
+        </div>
+    </div>
+    <!--FØLG OS-->
+    <div class="foelgos" id="foelgos">
+        <!--HEADER FØLG OS-->
+        <h1>Følg os</h1>
+        <!--NYHEDSBREV-->
+        <div class="nyhedsbrev">
+            <!--OVERSKRIFT NYHEDSBREV-->
+            <h2>God øl i indbakken</h2>
+            <!--BESKRIVELSE-->
+            <p>Få informationer om nye produkter, eksklusive begivenheder og smagninger.</p>
+            <!--FORM-->
+            <form class="nyhedsbrev">
+                Navn<br>
+                <input type="text" name="name"><br><br>
+                Mailadresse<br>
+                <input type="email" name="email"><br><br>
+                <input type="submit" value="Tilmeld mig!">
+            </form>
+        </div>
+        <!--INSTAGRAM-->
+        <div class="instagram">
+            <!--OVERSKRIFT INSTAGRAM-->
+            <h2>Gå på opdagelse i Krenkerup</h2>
+            <!--BESKRIVELSE-->
+            <p>Vi har skabt et unikt univers, hvor du kan se mere om historien, produkterne, og komme med ‘bag facaden’ hos Krenkerup Bryggeri.</p>
+            <!--INSTA LOGO-->
+            <img src="images/Instagram-logo-2016.gold.png" alt="Instagram logo">
+            <!--KNAP MED LINK-->
+            <!--    Knap indsat som form, da dette er nemmest, når der kun bruges html
+                    Link ses i form -> action
+                    Knap tekst ses i input -> value -->
+            <form action="https://www.instagram.com/mulnykbeer/" target="_blank">
+                <input type="submit" value="Gå på opdagelse">
+            </form>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div class="div-footer">
+        <!--LINK TIL BRYGGERIET-->
+        <div class="bryggeri-link">
+            <img src="images/krenkerup.kedler.bigger.jpg" alt="kedler img">
+            <!--   Knap indsat som form, da dette er nemmest, når der kun bruges html
+                   Link ses i form -> action
+                   Knap tekst ses i input -> value -->
+            <form action="http://krenkerupbryggeri.dk/" target="_blank">
+                <input type="submit" value="Besøg bryggeriet">
+            </form>
+        </div>
+        <!--LOGO-->
+        <div class="footer-logo">
+            <img src="images/Krenkerup_logo.jpg" alt="krenkerup logo">
+        </div>
+        <!--NYHEDSBREV-->
+        <div class="nyhedsbrev-footer">
+            <!--OVERSKRIFT NYHEDSBREV-->
+            <h2>God øl i indbakken</h2>
+            <!--BESKRIVELSE-->
+            <p>Få informationer om nye produkter, eksklusive begivenheder og smagninger.</p>
+            <!--FORM-->
+            <form class="nyhedsbrev">
+                Navn<br>
+                <input type="text" name="name"><br><br>
+                Mailadresse<br>
+                <input type="email" name="email"><br><br>
+                <input type="submit" value="Tilmeld mig!">
+            </form>
+        </div>
+    </div>
+    <!--BUND FOOTER-->
+    <footer>
+        <p>Krenkrup Bryggeri<br>Krenkrupvej 29, 4990 Sakskøbing<br>krenkrup@bryggeri.dk</p>
+    </footer>
+</main>
 
+
+<!--JAVASCRIPT TIL BURGERMENU-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myMenunav");
+        if (x.className === "menunav") {
+            x.className += " responsive";
+        } else {
+            x.className = "menunav";
+        }
+    }
+</script>
 
 </body>
 </html>

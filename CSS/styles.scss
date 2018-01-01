@@ -1,4 +1,57 @@
 
+//Variabler
+$gold: #AF8819;
+$black: #000000;
+$baggrundgrå: #f9f9f9;
+
+
+
+
+
+
+html, body{
+  height: 100%;
+  overflow: scroll;
+  margin: 0;
+}
+
+.front-cover{
+  background-image: url("http://www.jonasbonde.dk/wp-content/uploads/2017/12/krenkerup.background-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+//Font decoration
+h1{
+  font-family: "Century Schoolbook";
+  font-size: 3em;
+  color: $gold;
+  text-align: center;
+  margin: 0;
+}
+h2{
+  font-family: "Century Schoolbook";
+  font-size: 2em;
+  color: $gold;
+  margin: 0;
+}
+h3{
+  font-family: "Century Schoolbook";
+  font-size: 1.5em;
+  color: $black;
+  margin: 0;
+}
+h4{
+  font-family: "Century Schoolbook";
+  margin: 0;
+}
+p{
+  margin: 0;
+  font-family: "Century Schoolbook";
+}
+
+
 .menunav{
   a{
     img{
@@ -7,4 +60,223 @@
 
     }
   }
+}
+
+main{
+  .historien{
+    width: 100%;
+    padding: 20px 0 50px 0;
+    background-color: $baggrundgrå;
+    display: grid;
+    grid-template-columns: 8% 8% 68% 16%;
+    grid-template-areas: ". tidslinje historie .";
+    .tidslinje{
+      grid-area: tidslinje;
+      border-left: 2px solid $gold;
+      height: 88%;
+      margin-top: 150px;
+    }
+    .historie-content{
+      grid-area: historie;
+      h1 {
+        margin-bottom: -45px;
+      }
+      .historie-afsnit{
+        display: flex;
+        flex-direction: column;
+        img{
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin: 70px auto 20px auto;
+          overflow: hidden;
+        }
+        h3{
+          margin: 0;
+
+        }
+        .aarstal{
+          margin: 3px 0 0 0;
+          font-family: "Century Gothic";
+          color: $gold;
+          font-size: x-large;
+        }
+        .beskrivelse{
+          margin: 3px 0 0 0;
+          font-family: "Century Schoolbook";
+        }
+      }
+    }
+  }
+  .oellen{
+    display: flex;
+    flex-direction: column;
+    img{
+      padding-top: 40px;
+      width: 60%;
+      margin: auto;
+    }
+    .oellen-beskrivelse{
+      margin: 0 16% 50px 16%;
+      h2{
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+  .foelgos{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 16% 50px 16%;
+    background-color: $baggrundgrå;
+    h1{
+      margin-bottom: 25px;
+    }
+    .nyhedsbrev{
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 25px;
+      input{
+        width: 100%;
+        height: 40px;
+        border: 0.2px solid black;
+      }
+      input[type=submit]{
+        border: none;
+        background-color: $gold;
+        color: white;
+        font-family: "Century Schoolbook";
+        border-radius: 4px;
+        font-size: larger;
+        font-weight: normal;
+      }
+    }
+    .instagram{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 70px;
+        margin: auto;
+        padding: 20px;
+      }
+      input[type=submit]{
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: $gold;
+        color: white;
+        font-family: "Century Schoolbook";
+        border-radius: 4px;
+        font-size: larger;
+        font-weight: normal;
+      }
+    }
+  }
+  .div-footer{
+    margin: 50px 16% 50px 16%;
+    img{
+      width: 100%;
+      padding-bottom: 10px;
+    }
+    input[type=submit]{
+      width: 100%;
+      height: 40px;
+      border: none;
+      background-color: $gold;
+      color: white;
+      font-family: "Century Schoolbook";
+      border-radius: 4px;
+      font-size: larger;
+      font-weight: normal;
+      maring-bottom: 50px;
+    }
+    .footer-logo{
+      display: none;
+    }
+    .nyhedsbrev-footer{
+      margin-top: 50px;
+      .nyhedsbrev{
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        input{
+          width: 100%;
+          height: 40px;
+          border: 0.2px solid black;
+        }
+        input[type=submit]{
+          border: none;
+          background-color: $gold;
+          color: white;
+          font-family: "Century Schoolbook";
+          border-radius: 4px;
+          font-size: larger;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+footer{
+  background-color: $baggrundgrå;
+  text-align: center;
+  padding: 50px 0;
+}
+
+
+
+//Aktiv menu punkt
+.activemenunav {
+  background-color: #4CAF50;
+  color: white;
+}
+
+//Menu ikon på burgermenu
+.menunav .icon {
+  display: none;
+  height: 30px;
+  padding: 30px 12px 0 0;
+  margin-top: 0;
+}
+
+
+// GÆLDER KUN POÅ MOBIL
+@media screen and (max-width: 600px) {
+  body{
+    margin: 0;
+  }
+  //STYLER BURGERMENU PÅ MOBIL
+  .menunav a:not(:first-child) {display: none;}
+  //MENU IKON
+  .menunav a.icon {
+    float: right;
+    display: block;
+  }
+  .menunav.responsive {
+    position: relative;
+    a{
+      color: black;
+    }
+  }
+  .menunav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menunav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .logo{
+    display: block;
+    width: 40%;
+    float: left;
+    padding: 5px 0 0 0;
+  }
+  .menunav{
+    display: block;
+    width: 100%;
+  }
+
 }
