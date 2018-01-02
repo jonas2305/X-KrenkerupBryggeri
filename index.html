@@ -9,19 +9,32 @@
 <body>
 
 <!--COVER VIDEO/BILLEDE-->
-
 <div class="front-cover"></div>
 
 <!--HEADER-->
-
-<div class="menunav">
-    <a href="index.html" class="logo"><img src="images/Krenkerup_logo.jpg"></a>
-    <a href="#historien">Historien</a>
-    <a href="#oellen">Øllen</a>
-    <a href="#foelgos">Følg os</a>
-    <a href="#">Bryggeriet</a>
-    <a href="javascript:void(0);" style="font-size:40px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+<header>
+    <div class="logo-mobil">
+        <a href="index.html" class="logo">
+            <img src="images/Krenkerup_logo.jpg" alt="Krenkerup logo">
+        </a>
+    </div>
+    <div class="logo-web">
+        <a href="index.html" class="logo">
+            <img src="images/Krenkerup_logo.jpg" alt="Krenkerup logo">
+        </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <div class="content">
+            <a href="#historien" class="firstchild">Historien</a>
+            <a href="#oellen">Øllen</a>
+            <a href="#foelgos">Følg os</a>
+            <a href="#" class="lastchild">Bryggeriet</a>
+        </div>
+        <div class="menuknap">
+            <a href="javascript:void(0);" style="font-size:40px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+</header>
 
 <!--MAIN CONTENT-->
 <main>
@@ -29,12 +42,12 @@
     <div class="historien" id="historien">
         <!--TIDSLINJE-->
         <div class="tidslinje"></div>
-        <!--HISTORIEN CONTENT-->
-        <div class="historie-content">
+        <!--HISTORIEN CONTENT
+        <div class="historie-content">-->
             <!--HEADER HISTORIEN-->
-            <h1>Historien</h1>
+            <h1 class="overskrift">Historien</h1>
             <!--BEGYNDELSEN-->
-            <div class="historie-afsnit">
+            <div class="historie-afsnit afsnit-et">
                 <img src="images/krenkerup.gaard.small.jpg" alt="begyndelsen img">
                 <h3>Begyndelsen</h3>
                 <p class="aarstal">1367</p>
@@ -44,7 +57,7 @@
                 </p>
             </div>
             <!--LILLE BRYGGERI - STOR SMAG-->
-            <div class="historie-afsnit">
+            <div class="historie-afsnit afsnit-to">
                 <img src="images/krenkerup.kedler.small.jpg" alt="starten img">
                 <h3>Lille bryggeri - Stor smag</h3>
                 <p class="aarstal">2008</p>
@@ -55,7 +68,7 @@
                 </p>
             </div>
             <!--EUROPAS BEDSTE-->
-            <div class="historie-afsnit">
+            <div class="historie-afsnit afsnit-tre">
                 <img src="images/krenkerup.beer.rauch.small.jpg" alt="Europas bedste img">
                 <h3>Europas bedste</h3>
                 <p class="aarstal">2011</p>
@@ -65,7 +78,7 @@
                 </p>
             </div>
             <!--10 ÅRS FØDSELSDAG-->
-            <div class="historie-afsnit">
+            <div class="historie-afsnit afsnit-fire">
                 <img src="images/krenkerup.glas.small.jpg" alt="10 års fødselsdag img">
                 <h3>10 års fødselsdag</h3>
                 <p class="aarstal">2018</p>
@@ -74,12 +87,12 @@
                     jubilæumsøl, der trækker rødderne tilbage til høstøllen, hvor det hele startede.
                 </p>
             </div>
-        </div>
+        <!--</div>-->
     </div>
     <!--ØLLEN-->
     <div class="oellen" id="oellen">
         <!--PRODUKTFOTO-->
-        <img src="images/krenkerup.x.small.png">
+        <img class="oellen-billede" src="images/krenkerup.x.small.png">
         <div class="oellen-beskrivelse">
             <!--HEADER ØLLEN-->
             <h2>En hyldest til originalen</h2>
@@ -169,11 +182,11 @@
 <!--JAVASCRIPT TIL BURGERMENU-->
 <script>
     function myFunction() {
-        var x = document.getElementById("myMenunav");
-        if (x.className === "menunav") {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
             x.className += " responsive";
         } else {
-            x.className = "menunav";
+            x.className = "topnav";
         }
     }
 </script>

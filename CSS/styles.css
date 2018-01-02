@@ -36,9 +36,70 @@ p {
   margin: 0;
   font-family: "Century Schoolbook"; }
 
-.menunav a img {
-  width: 100px;
-  margin: auto; }
+header .logo-mobil {
+  display: none;
+  z-index: -1;
+  position: static; }
+  header .logo-mobil a img {
+    width: 100px;
+    margin: auto; }
+header .logo-web {
+  display: block; }
+  header .logo-web a img {
+    display: flex;
+    margin: 5px auto;
+    width: 200px; }
+header .topnav {
+  overflow: hidden; }
+  header .topnav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: "Century Schoolbook"; }
+    header .topnav a:hover {
+      font-weight: bold; }
+  header .topnav .icon {
+    display: none;
+    padding: 18px 20px 20px 12px;
+    text-align: center; }
+@media screen and (max-width: 900px) {
+  header .logo-mobil {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 5px; }
+  header .logo-web {
+    display: none; }
+  header img {
+    width: 100px; }
+  header .topnav {
+    height: 105px;
+    margin-top: -90px;
+    z-index: 10; }
+    header .topnav .firstchild {
+      margin-top: 80px; }
+    header .topnav .lastchild {
+      margin-bottom: 50px; }
+  header .topnav a {
+    display: none; }
+  header .topnav a.icon {
+    float: right;
+    display: block; }
+  header .topnav.responsive {
+    position: relative;
+    height: 100%; }
+  header .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  header .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center; } }
 
 main .historien {
   width: 100%;
@@ -46,35 +107,43 @@ main .historien {
   background-color: #f9f9f9;
   display: grid;
   grid-template-columns: 8% 8% 68% 16%;
-  grid-template-areas: ". tidslinje historie ."; }
+  grid-template-areas: "overskrift overskrift overskrift overskrift" ". tidslinje afsnit-et ." ". tidslinje afsnit-to ." ". tidslinje afsnit-tre ." ". tidslinje afsnit-fire ."; }
   main .historien .tidslinje {
     grid-area: tidslinje;
     border-left: 2px solid #AF8819;
     height: 88%;
     margin-top: 150px; }
-  main .historien .historie-content {
-    grid-area: historie; }
-    main .historien .historie-content h1 {
-      margin-bottom: -45px; }
-    main .historien .historie-content .historie-afsnit {
-      display: flex;
-      flex-direction: column; }
-      main .historien .historie-content .historie-afsnit img {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        margin: 70px auto 20px auto;
-        overflow: hidden; }
-      main .historien .historie-content .historie-afsnit h3 {
-        margin: 0; }
-      main .historien .historie-content .historie-afsnit .aarstal {
-        margin: 3px 0 0 0;
-        font-family: "Century Gothic";
-        color: #AF8819;
-        font-size: x-large; }
-      main .historien .historie-content .historie-afsnit .beskrivelse {
-        margin: 3px 0 0 0;
-        font-family: "Century Schoolbook"; }
+  main .historien .overskrift {
+    grid-area: overskrift;
+    margin-bottom: -45px;
+    text-align: center; }
+  main .historien .afsnit-et {
+    grid-area: afsnit-et; }
+  main .historien .afsnit-to {
+    grid-area: afsnit-to; }
+  main .historien .afsnit-tre {
+    grid-area: afsnit-tre; }
+  main .historien .afsnit-fire {
+    grid-area: afsnit-fire; }
+  main .historien .historie-afsnit {
+    display: flex;
+    flex-direction: column; }
+    main .historien .historie-afsnit img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin: 70px auto 20px auto;
+      overflow: hidden; }
+    main .historien .historie-afsnit h3 {
+      margin: 0; }
+    main .historien .historie-afsnit .aarstal {
+      margin: 3px 0 0 0;
+      font-family: "Century Gothic";
+      color: #AF8819;
+      font-size: x-large; }
+    main .historien .historie-afsnit .beskrivelse {
+      margin: 3px 0 0 0;
+      font-family: "Century Schoolbook"; }
 main .oellen {
   display: flex;
   flex-direction: column; }
@@ -162,56 +231,79 @@ main .div-footer {
         border-radius: 4px;
         font-size: larger;
         font-weight: normal; }
-
-footer {
+main footer {
   background-color: #f9f9f9;
   text-align: center;
   padding: 50px 0; }
 
-.activemenunav {
-  background-color: #4CAF50;
-  color: white; }
-
-.menunav .icon {
-  display: none;
-  height: 30px;
-  padding: 30px 12px 0 0;
-  margin-top: 0; }
-
-@media screen and (max-width: 600px) {
-  body {
-    margin: 0; }
-
-  .menunav a:not(:first-child) {
-    display: none; }
-
-  .menunav a.icon {
-    float: right;
-    display: block; }
-
-  .menunav.responsive {
-    position: relative; }
-    .menunav.responsive a {
-      color: black; }
-
-  .menunav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0; }
-
-  .menunav.responsive a {
-    float: none;
-    display: block;
-    text-align: center; }
-
-  .logo {
-    display: block;
-    width: 40%;
-    float: left;
-    padding: 5px 0 0 0; }
-
-  .menunav {
-    display: block;
-    width: 100%; } }
+@media screen and (min-width: 600px) {
+  main .historien {
+    display: grid;
+    grid-template-columns: 50% 2px 50%;
+    grid-template-rows: auto auto 250px auto 250px auto 250px auto;
+    grid-template-areas: "overskrift overskrift overskrift" ". tidslinje historienet" "historiento tidslinje historienet" "historiento tidslinje ." "historiento tidslinje historientre" ". tidslinje historientre" "historienfire tidslinje historientre" "historienfire tidslinje ."; }
+    main .historien .overskrift {
+      grid-area: overskrift; }
+    main .historien .tidslinje {
+      grid-area: tidslinje;
+      height: 90% !important; }
+    main .historien .afsnit-et {
+      grid-area: historienet; }
+    main .historien .afsnit-to {
+      grid-area: historiento; }
+    main .historien .afsnit-tre {
+      grid-area: historientre; }
+    main .historien .afsnit-fire {
+      grid-area: historienfire; }
+    main .historien .historie-afsnit {
+      margin-left: 20%;
+      margin-right: 20%; }
+  main .oellen {
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-areas: ". beskrivelse oellen ."; }
+    main .oellen .oellen-billede {
+      grid-area: oellen; }
+    main .oellen .oellen-beskrivelse {
+      grid-area: beskrivelse;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+@media screen and (min-width: 900px) {
+  main .historien {
+    display: grid;
+    grid-template-columns: 50% 2px 50%;
+    grid-template-rows: auto auto 150px auto 150px auto 150px auto;
+    grid-template-areas: "overskrift overskrift overskrift" ". tidslinje historienet" "historiento tidslinje historienet" "historiento tidslinje ." "historiento tidslinje historientre" ". tidslinje historientre" "historienfire tidslinje historientre" "historienfire tidslinje ."; }
+    main .historien .overskrift {
+      grid-area: overskrift; }
+    main .historien .tidslinje {
+      grid-area: tidslinje; }
+    main .historien .afsnit-et {
+      grid-area: historienet; }
+    main .historien .afsnit-to {
+      grid-area: historiento; }
+    main .historien .afsnit-tre {
+      grid-area: historientre; }
+    main .historien .afsnit-fire {
+      grid-area: historienfire; }
+    main .historien .historie-afsnit {
+      margin-left: 25%;
+      margin-right: 25%; }
+  main .div-footer {
+    margin: 50px 10% 50px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "besog logo nyhed";
+    grid-column-gap: 10%; }
+    main .div-footer .bryggeri-link {
+      grid-area: besog; }
+    main .div-footer .footer-logo {
+      display: block;
+      grid-area: logo;
+      margin: 0 20%; }
+    main .div-footer .nyhedsbrev-footer {
+      margin: 0;
+      grid-area: nyhed; } }
 
 /*# sourceMappingURL=styles.css.map */
