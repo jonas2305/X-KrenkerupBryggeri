@@ -4,10 +4,22 @@ html, body {
   margin: 0; }
 
 .front-cover {
-  background-image: url("http://www.jonasbonde.dk/wp-content/uploads/2017/12/krenkerup.background-1.jpg");
-  background-size: cover;
-  background-position: center;
   height: 100%; }
+  .front-cover video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -mox-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(images/krenkerup.background.jpg) no-repeat;
+    background-size: cover; }
 
 h1 {
   font-family: "Century Schoolbook";
@@ -36,75 +48,76 @@ p {
   margin: 0;
   font-family: "Century Schoolbook"; }
 
-header .logo-mobil {
-  display: none;
-  z-index: -1;
-  position: static; }
-  header .logo-mobil a img {
-    width: 100px;
-    margin: auto; }
-header .logo-web {
-  display: block; }
-  header .logo-web a img {
-    display: flex;
-    margin: 15px auto;
-    width: 200px; }
-header .topnav {
-  overflow: hidden; }
-  header .topnav a {
-    float: left;
-    display: block;
-    color: #333;
-    text-align: center;
-    padding: 20px 0px;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: "Century Schoolbook"; }
-    header .topnav a:hover {
-      font-weight: bold; }
-  header .topnav .icon {
-    display: none;
-    padding: 18px 20px 20px 12px;
-    text-align: center; }
-@media screen and (max-width: 900px) {
+header {
+  background-color: white; }
   header .logo-mobil {
-    display: block;
-    position: relative;
-    top: 5px;
-    left: 5px; }
+    display: none;
+    position: static; }
+    header .logo-mobil a img {
+      width: 100px;
+      margin: auto; }
   header .logo-web {
-    display: none; }
-  header img {
-    width: 100px; }
-  header .topnav {
-    height: 105px;
-    margin-top: -90px;
-    z-index: 10; }
-    header .topnav .firstchild {
-      margin-top: 80px; }
-    header .topnav .lastchild {
-      margin-bottom: 50px; }
-  header .topnav a {
-    display: none; }
-  header .topnav a.icon {
-    float: right;
     display: block; }
-  header .topnav.responsive {
-    position: relative;
-    height: 100%; }
-  header .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0; }
-  header .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center; } }
+    header .logo-web a img {
+      display: flex;
+      margin: 15px auto;
+      width: 150px; }
+  header .topnav {
+    background-color: white; }
+    header .topnav a {
+      float: left;
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 20px 0px;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-family: "Century Schoolbook"; }
+      header .topnav a:hover {
+        color: #AF8819; }
+    header .topnav .icon {
+      display: none;
+      padding: 18px 20px 20px 12px;
+      text-align: center; }
+  @media screen and (max-width: 900px) {
+    header .logo-mobil {
+      display: block;
+      position: relative;
+      top: 5px;
+      left: 5px; }
+    header .logo-web {
+      display: none; }
+    header img {
+      width: 100px; }
+    header .topnav {
+      height: 105px;
+      margin-top: -90px;
+      z-index: 10; }
+      header .topnav .firstchild {
+        margin-top: 80px; }
+      header .topnav .lastchild {
+        margin-bottom: 50px; }
+    header .topnav a {
+      display: none; }
+    header .topnav a.icon {
+      float: right;
+      display: block; }
+    header .topnav.responsive {
+      position: relative;
+      height: 100%; }
+    header .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    header .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center; } }
 
 main .historien {
   width: 100%;
   padding: 20px 0 50px 0;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   display: grid;
   grid-template-columns: 8% 8% 68% 16%;
   grid-template-areas: "overskrift overskrift overskrift overskrift" ". tidslinje afsnit-et ." ". tidslinje afsnit-to ." ". tidslinje afsnit-tre ." ". tidslinje afsnit-fire ."; }
@@ -159,7 +172,7 @@ main .foelgos {
   display: flex;
   flex-direction: column;
   padding: 50px 16% 50px 16%;
-  background-color: #f9f9f9; }
+  background-color: #f4f4f4; }
   main .foelgos h1 {
     margin-bottom: 25px; }
   main .foelgos .nyhedsbrev {
@@ -232,7 +245,7 @@ main .div-footer {
         font-size: larger;
         font-weight: normal; }
 main footer {
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   text-align: center;
   padding: 50px 0; }
 
@@ -270,6 +283,22 @@ main footer {
       flex-direction: column;
       justify-content: center; } }
 @media screen and (min-width: 900px) {
+  header .topnav .logo-web {
+    position: relative !important;
+    z-index: -1 !important; }
+  header .topnav .content {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -120px;
+    height: 120px;
+    z-index: 10; }
+    header .topnav .content .firstchild, header .topnav .content .lastchild {
+      flex-grow: 0.5; }
+    header .topnav .content .secondchild, header .topnav .content .thirdchild {
+      flex-grow: 100; }
+
   main .historien {
     display: grid;
     grid-template-columns: 50% 2px 50%;
@@ -290,6 +319,13 @@ main footer {
     main .historien .historie-afsnit {
       margin-left: 25%;
       margin-right: 25%; }
+  main .foelgos {
+    padding: 50px 25%; }
+    main .foelgos input[type=submit] {
+      display: flex;
+      width: 50% !important;
+      margin: auto;
+      justify-content: center; }
   main .div-footer {
     margin: 50px 10% 50px 10%;
     display: grid;
