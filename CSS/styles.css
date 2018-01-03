@@ -47,7 +47,7 @@ header .logo-web {
   display: block; }
   header .logo-web a img {
     display: flex;
-    margin: 5px auto;
+    margin: 15px auto;
     width: 200px; }
 header .topnav {
   overflow: hidden; }
