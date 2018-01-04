@@ -10,7 +10,7 @@ $gold: #AF8819;
 $black: #000000;
 $baggrundgrå: #f4f4f4;
 $primary-font: "centuryNormal", Georgia, serif;
-$secondary-font: "Century Gothic";
+$secondary-font: "Arial", sans-serif;
 
 //Styler body, og sikre højden på video-header er 100%
 html, body{
@@ -27,7 +27,7 @@ html, body{
   video{
     z-index: -100;
     width: auto;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     top:50%;
     left: 50%;
@@ -109,6 +109,7 @@ header{
         display: flex;
         margin: 15px auto;
         width: 150px;
+        padding-top: 15px;
       }
     }
   }
@@ -258,7 +259,7 @@ main{
         margin: 3px 0 0 0;
         font-family: $secondary-font;
         color: $gold;
-        font-size: x-large;
+        font-size: larger;
       }
       //STYLING AF BESKRIVELSE
       .beskrivelse{
@@ -325,6 +326,7 @@ main{
     .instagram{
       display: flex;
       flex-direction: column;
+      margin-top: 5%;
       //INSTAGRAM LOGO
       img{
         width: 20%;

@@ -13,7 +13,7 @@ html, body {
   .front-cover video {
     z-index: -100;
     width: auto;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     top: 50%;
     left: 50%;
@@ -78,7 +78,8 @@ header {
     header .logo-web a img {
       display: flex;
       margin: 15px auto;
-      width: 150px; }
+      width: 150px;
+      padding-top: 15px; }
   header .topnav {
     /*background-color: white;*/ }
     header .topnav a {
@@ -171,9 +172,9 @@ main .historien {
       margin: 0; }
     main .historien .historie-afsnit .aarstal {
       margin: 3px 0 0 0;
-      font-family: "Century Gothic";
+      font-family: "Arial", sans-serif;
       color: #AF8819;
-      font-size: x-large; }
+      font-size: larger; }
     main .historien .historie-afsnit .beskrivelse {
       margin: 3px 0 0 0;
       font-family: "centuryNormal", Georgia, serif; }
@@ -217,7 +218,8 @@ main .foelgos {
       font-weight: normal; }
   main .foelgos .instagram {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 5%; }
     main .foelgos .instagram img {
       width: 20%;
       margin: auto;
