@@ -216,7 +216,7 @@ main .foelgos {
     display: flex;
     flex-direction: column; }
     main .foelgos .instagram img {
-      width: 10%;
+      width: 20%;
       margin: auto;
       padding: 20px; }
     main .foelgos .instagram input[type=submit] {
@@ -229,50 +229,13 @@ main .foelgos {
       border-radius: 4px;
       font-size: larger;
       font-weight: normal; }
-main .div-footer {
-  margin-bottom: -2px;
-  margin-top: -2px;
-  background-color: white;
-  padding: 5% 16% 5% 16%; }
-  main .div-footer img {
-    width: 100%;
-    padding-bottom: 10px; }
-  main .div-footer input[type=submit] {
-    width: 100%;
-    height: 40px;
-    border: none;
-    background-color: #AF8819;
-    color: white;
-    font-family: "Century Schoolbook";
-    border-radius: 4px;
-    font-size: larger;
-    font-weight: normal;
-    maring-bottom: 50px; }
-  main .div-footer .footer-logo {
-    display: none; }
-  main .div-footer .nyhedsbrev-footer {
-    margin-top: 50px; }
-    main .div-footer .nyhedsbrev-footer .nyhedsbrev {
-      width: 100%;
-      padding-top: 15px;
-      padding-bottom: 25px; }
-      main .div-footer .nyhedsbrev-footer .nyhedsbrev input {
-        width: 100%;
-        height: 40px;
-        border: 0.2px solid black; }
-      main .div-footer .nyhedsbrev-footer .nyhedsbrev input[type=submit] {
-        border: none;
-        background-color: #AF8819;
-        color: white;
-        font-family: "Century Schoolbook";
-        border-radius: 4px;
-        font-size: larger;
-        font-weight: normal; }
 
 footer {
-  background-color: #f4f4f4;
+  background-color: #AF8819;
   text-align: center;
-  padding: 50px 0; }
+  padding: 30px 0; }
+  footer p {
+    color: white; }
 
 @media screen and (min-width: 600px) {
   main .historien {
@@ -352,22 +315,7 @@ footer {
       display: flex;
       width: 50% !important;
       margin: auto;
-      justify-content: center; }
-  main .div-footer {
-    padding: 5% 10% 5% 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "besog logo nyhed";
-    grid-column-gap: 10%; }
-    main .div-footer .bryggeri-link {
-      grid-area: besog; }
-    main .div-footer .footer-logo {
-      display: block;
-      grid-area: logo;
-      margin: 0 20%; }
-    main .div-footer .nyhedsbrev-footer {
-      margin: 0;
-      grid-area: nyhed; } }
+      justify-content: center; } }
 @media screen and (min-width: 1600px) {
   .afsnit-et, .afsnit-tre {
     margin-right: 45% !important;
@@ -378,6 +326,9 @@ footer {
     margin-right: 20% !important; }
 
   .oellen-beskrivelse {
-    margin-left: 40% !important; } }
+    margin-left: 40% !important; }
+
+  .foelgos {
+    padding: 5% 35% !important; } }
 
 /*# sourceMappingURL=styles.css.map */
