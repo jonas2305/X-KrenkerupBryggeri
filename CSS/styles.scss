@@ -1,9 +1,15 @@
+@font-face {
+  font-family: centuryNormal;
+  src:url("../fonts/century.ttf") format("truetype"),
+      url("../fonts/century.woff") format("woff"),
+      url("../fonts/century.woff2") format("woff2");
+}
 
 //Variabler
 $gold: #AF8819;
 $black: #000000;
 $baggrundgrå: #f4f4f4;
-$primary-font: "Century Schoolbook";
+$primary-font: "centuryNormal", Georgia, serif;
 $secondary-font: "Century Gothic";
 
 //Styler body, og sikre højden på video-header er 100%
