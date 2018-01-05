@@ -86,11 +86,11 @@ header {
     header .topnav a {
       float: left;
       display: block;
-      color: #333;
+      color: black;
       text-align: center;
       padding: 20px 0px;
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1.4em;
       font-family: "centuryNormal", Georgia, serif; }
       header .topnav a:hover {
         color: #AF8819; }
