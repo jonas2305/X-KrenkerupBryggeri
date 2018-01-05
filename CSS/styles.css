@@ -66,13 +66,14 @@ p {
 header {
   background-color: white;
   z-index: 1;
-  position: relative; }
+  position: sticky;
+  top: 0; }
   header .logo-mobil {
     display: none;
     position: static;
     z-index: -1; }
     header .logo-mobil a img {
-      width: 100px;
+      width: 80px;
       margin: auto; }
   header .logo-web {
     display: block; }
@@ -96,7 +97,7 @@ header {
         color: #AF8819; }
     header .topnav .icon {
       display: none;
-      padding: 18px 20px 20px 12px;
+      padding: 28px 20px 20px 12px;
       text-align: center;
       color: #AF8819; }
   @media screen and (max-width: 900px) {

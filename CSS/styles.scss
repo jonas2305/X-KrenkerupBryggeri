@@ -89,7 +89,8 @@ p{
 header{
   background-color: white;
   z-index: 1;
-  position: relative;
+  position: sticky;
+  top: 0;
   //Styler logo på mobil
   .logo-mobil{
     display: none;
@@ -97,7 +98,7 @@ header{
     z-index: -1;
     a{
       img{
-        width: 100px;
+        width: 80px;
         margin: auto;
       }
     }
@@ -134,7 +135,7 @@ header{
     //Styler burger-menu ikon
     .icon{
       display: none;
-      padding: 18px 20px 20px 12px;
+      padding: 28px 20px 20px 12px;
       text-align: center;
       color: $gold;
     }
