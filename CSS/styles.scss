@@ -78,6 +78,7 @@ h3{
 }
 h4{
   font-family: $primary-font;
+  font-size: 1.2em;
   margin: 0;
 }
 p{
@@ -287,6 +288,9 @@ main{
       margin: 0 16% 5% 16%;
       h2{
         margin-bottom: 20px;
+      }
+      .brygningen-overskrift{
+        margin-top: 15px;
       }
     }
   }
