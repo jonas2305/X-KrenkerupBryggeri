@@ -291,7 +291,7 @@ footer {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: -120px;
+    margin-top: -125px;
     height: 120px;
     z-index: 10;
     /*FØRSTE OG SIDSTE MENUPUNKT HAR MINDRE PLADS, OG 2. OG 3. HAR MERE PLADS; FOR AT SKABE PLADS
