@@ -226,10 +226,10 @@ main .foelgos {
     display: flex;
     flex-direction: column;
     margin-top: 5%; }
-    main .foelgos .instagram img {
-      width: 20%;
+    main .foelgos .instagram video {
+      width: 100%;
       margin: auto;
-      padding: 20px; }
+      padding: 20px 0; }
     main .foelgos .instagram input[type=submit] {
       width: 100%;
       height: 40px;
@@ -281,7 +281,9 @@ footer {
       grid-area: beskrivelse;
       display: flex;
       flex-direction: column;
-      justify-content: center; } }
+      justify-content: center; }
+  main .foelgos .instagram video {
+    width: 60%; } }
 @media screen and (min-width: 900px) {
   header .topnav .logo-web {
     position: relative !important;

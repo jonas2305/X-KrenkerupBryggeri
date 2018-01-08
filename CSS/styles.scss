@@ -334,11 +334,11 @@ main{
       display: flex;
       flex-direction: column;
       margin-top: 5%;
-      //INSTAGRAM LOGO
-      img{
-        width: 20%;
+      //STYLER INSTAGRAM VIDEO
+      video{
+        width: 100%;
         margin: auto;
-        padding: 20px;
+        padding: 20px 0;
       }
       //STYLING AF KNAP TIL INSTAGRAM
       input[type=submit]{
@@ -422,6 +422,13 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+    }
+    .foelgos{
+      .instagram{
+        video{
+          width: 60%;
+        }
       }
     }
   }
